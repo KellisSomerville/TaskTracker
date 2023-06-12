@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/stylesheets/style.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>Smoove's Task Tracker</title>
+  </head>
+  <body>
+    <header>
+      <h1>SMOOVE'S TASK TRACKER</h1>
+      <form id="new-task-form" action="/submit" method="POST">
+        <input
+          type="text"
+          name="newtask"
+          id="new-task-input"
+          placeholder="TYPE IN A TASK"
+        />
+        <input type="submit" id="new-task-submit" value="ADD TASK" />
+      </form>
+    </header>
+    <main>
+      <section class="task-list">
+        <h2>MY TASKS</h2>
+
+        <div id="tasks">
+          <!-- <div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">EDIT TASK</button>
+						<button class="delete">DELETE TASK</button>
+					</div>
+				</div> -->
+        </div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
